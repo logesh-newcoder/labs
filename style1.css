@@ -1,0 +1,87 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;   
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #013266;
+    position: relative;
+}
+
+.text-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.typing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.typing span {
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideText 2s ease forwards;
+}
+
+.typing span:nth-child(1) { animation-delay: 0s; }
+.typing span:nth-child(2) { animation-delay: 2s; }
+.typing span:nth-child(3) { animation-delay: 4s; }
+.typing span:nth-child(4) { animation-delay: 6s; }
+
+@keyframes slideText {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.action-button {
+    color: white;
+    background-color: #007BFF;
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: showButton 0.5s ease forwards;
+    animation-delay: 8s; 
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes showButton {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
