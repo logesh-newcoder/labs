@@ -11,18 +11,17 @@
 <body>
 
     <div class="text-container">
-        <h1>Welcome to Lab Finder Platform!</h1>
-        <p>This platform helps college students and teachers assign lab work.</p>
-        <p>Teachers can manage lab hours and assignments easily.</p>
-        <p>Students can view and track their lab assignments.</p>
-
+        <div class="typing">
+            <span>Welcome to Lab Finder Platform!</span>
+            <span>This platform helps college students and teachers assign lab work.</span>
+            <span>Teachers can manage lab hours and assignments easily.</span>
+            <span>Students can view and track their lab assignments.</span>
+        </div>
         <button class="action-button" id="getStartedButton">Get Started</button>
     </div>
 
     <script>
-        // JavaScript to handle the button click and redirect without http:// or https://
         document.getElementById("getStartedButton").addEventListener("click", function() {
-            // Using protocol-relative URL to avoid http:// or https:// explicitly
             window.location.href = "//lab-finder.infinityfreeapp.com";
         });
     </script>
