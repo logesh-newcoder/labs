@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles_noral.css">
+    <link rel="stylesheet" href="styles_desktop.css">
+    <link rel="stylesheet" href="styles_mobile.css">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h2>LAB FINDER</h2>
+        </div>    
+    </header> 
+
+    <nav>
+        <ul>
+            <li><a href="lab_html/lab_1.php">GOSLING LAB</a></li>
+            <li><a href="lab_html/lab_2.php">LINUS LAB</a></li>
+            <li><a href="lab_html/lab_3.php">GATES LAB</a></li>
+            <li><a href="lab_html/lab_4.php">RITCHIE LAB</a></li>
+            <li><a href="lab_html/lab_5.php">JOBS LAB</a></li>
+            <li onclick="load()"><a href="lab_class_update/index.html">INCHARGE</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div class="footer">
+            <div class="copy">
+                &copy; 2024 Lab Finder.
+            </div>
+            <div class="details">
+                Developed By : LOGESH, BSC.CS, 2022 - 2025 
+            </div>    
+        </div>
+    </footer>
+
+    <script>
+        function load(){
+            const password = "stu";
+            const inchargePassword = prompt("Please enter the password:");
+            if (password !== inchargePassword) {
+                alert("Incorrect password! Redirecting to home page.");
+                location.href = "index.html"; 
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@media (max-width:520px) {
+    .text-container {
+        width: 85%;
+        padding: 10px;
+    }
+        
+    .typing span {
+        font-size: 0.7rem;
+    }
+        
+    .action-button {
+        margin: 0.5rem 0;
+        padding: 0.3rem;
+        font-size: 0.7rem;
+    }
+        
+}

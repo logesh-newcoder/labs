@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Lab Finder</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div class="text-container">
+        <div class="typing">
+            <span>Welcome to Lab Finder Platform!</span>
+            <span>This platform helps college students and teachers assign lab work.</span>
+            <span>Teachers can manage lab hours and assignments easily.</span>
+            <span>Students can view and track their lab assignments.</span>
+        </div>
+        <button class="action-button" id="getStartedButton">Get Started</button>
+    </div>
+
+    <script>
+        // JavaScript to handle the button click and redirect via HTTP
+        document.getElementById("getStartedButton").addEventListener("click", function() {
+            // Redirect via HTTP (Not HTTPS)
+            window.location.href = 'http://lab-finder.infinityfreeapp.com';
+        });
+    </script>
+</body>
+</html>
