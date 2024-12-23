@@ -1,0 +1,18 @@
+@media (min-width: 521px) and (max-width: 1250px) {
+    
+    .top{
+    padding: 10px;
+    font-size: 2rem;
+    }
+
+    a{
+        font-size: 1.7rem;
+    }
+    
+    li{
+        width: 70vw;
+        padding: 10px;
+        margin: 10px;
+    }
+
+}

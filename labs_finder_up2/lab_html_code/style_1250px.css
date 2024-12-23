@@ -1,0 +1,67 @@
+@media (min-width: 521px) and (max-width: 1250px) {
+
+    /*======================table style start===============*/
+    table {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+
+    /*======================table style start===============*/
+    table th {
+        padding: 0.3rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    table td{
+        text-align: center;
+        font-size: 1.5rem;
+    }    
+    table td button,
+    table th button {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    /*======================table down displayer form style start===============*/
+    main .displayer {
+        padding: 0.5rem;
+    }
+    
+    .displayer h1 {
+        font-size: 1.5rem;
+        padding: 0.4rem 0;
+    }    
+
+    #classname,
+    #classupdate,
+    textarea ,
+    #classorder,
+    #class1,
+    #class2 {
+        width: 95%;
+        margin: 5px 0;
+        padding: 5px;
+    }
+    
+    #classname,
+    #classupdate,
+    #classorder,
+    #class1,
+    #class2 {
+        font-size: 1.3rem;
+    }
+    
+    textarea {
+        height: 180px;
+        font-size: 1rem;
+        
+    }
+    
+    form #sub,
+    form button {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+        
+}
