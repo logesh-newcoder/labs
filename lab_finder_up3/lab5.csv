@@ -1,0 +1,7 @@
+class_id,class_oredr,class_id,class_oredr,class_id,class_oredr,class_id,class_oredr,class_id,class_oredr,class_id,class_oredr
+101,I,3,"III BSC CS A -GM, I MSC CS -JAVA",2,I MSC CS -D.M,,,,,,
+102,II,3,III BSC CS B -S.T,2,"III BSC CS A -GM, I MSC CS -JAVA",,,,,,
+103,III,3,III BSC IT -GM,2,II BCOM IT -VB,,,,,,
+104,IV,3,III BSC IT -DOT NET,2,III BSC IT -GM,,,,,,
+105,V,3,III BSC CS B -GM,2,I MSC CS -D.M,,,,,,
+106,VI,3,III BSC CS A -S.T,2,III BSC CS B -GM,,,,,,
