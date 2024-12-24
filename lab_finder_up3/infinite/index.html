@@ -22,7 +22,7 @@
             <li><a href="lab_html/lab_3.php">GATES LAB</a></li>
             <li><a href="lab_html/lab_4.php">RITCHIE LAB</a></li>
             <li><a href="lab_html/lab_5.php">JOBS LAB</a></li>
-            <li onclick="load()"><a href="lab_class_update/index.html">INCHARGE</a></li>
+            <li onclick="loadIncharge()">INCHARGE</li>
         </ul>
     </nav>
 
@@ -38,11 +38,18 @@
     </footer>
 
     <script>
-        function load(){
-            const password = "stu";
-            const inchargePassword = prompt("Please enter the password:");
-            if (password !== inchargePassword) {
-                alert("Incorrect password! Redirecting to home page.");
+        // Function to validate the password
+        function loadIncharge() {
+            const correctPassword = "stu"; // Define the correct password
+            const enteredPassword = prompt("Please enter the password:"); // Prompt the user for the password
+            
+            // Check if the password matches
+            if (enteredPassword === correctPassword) {
+                // Redirect to the INCHARGE page
+                location.href = "lab_class_update/index.html";
+            } else {
+                // Show an alert and redirect to the home page
+                alert("Incorrect password! Redirecting to the home page.");
                 location.href = "index.html"; 
             }
         }
