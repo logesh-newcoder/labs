@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <form action="login.php" method="post">
+            <label for="position">Position:</label>
+            <div class="position">
+                <label for="student"><input type="radio" name="position" id="student" value="101"> Student</label>
+                <label for="teacher"><input type="radio" name="position" id="teacher" value="102"> Teacher</label>
+                <label for="incharge"><input type="radio" name="position" id="incharge" value="103"> Incharge</label>    
+            </div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter the Password">
+            <input type="submit" value="Submit">
+            <a href="person-position/index.php"></a>
+        </form>
+    </div>
+</body>
+</html>
