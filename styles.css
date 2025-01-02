@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background: #121212; 
+    color: #ffffff; 
+    overflow: hidden;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 0.8rem;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background: #1e1e1e; 
+    animation: multicolorGlow 5s linear infinite; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* Multicolor Glow Animation */
+@keyframes multicolorGlow {
+    0% {
+        box-shadow: 0 0 15px #ff6f61, 0 0 30px #ff6f61, 0 0 50px #ff6f61;
+        border-color: #ff6f61;
+    }
+    25% {
+        box-shadow: 0 0 15px #ffa36c, 0 0 30px #ffa36c, 0 0 50px #ffa36c;
+        border-color: #ffa36c;
+    }
+    50% {
+        box-shadow: 0 0 15px #33ff57, 0 0 30px #33ff57, 0 0 50px #33ff57;
+        border-color: #33ff57;
+    }
+    75% {
+        box-shadow: 0 0 15px #3357ff, 0 0 30px #3357ff, 0 0 50px #3357ff;
+        border-color: #3357ff;
+    }
+    100% {
+        box-shadow: 0 0 15px #ff57ff, 0 0 30px #ff57ff, 0 0 50px #ff57ff;
+        border-color: #ff57ff;
+    }
+}
+
+/* Typing Animation */
+.typing span {
+    display: block;
+    font-size: 1.7rem;
+    margin: 0.8rem auto;
+    color: #ffffff; 
+    animation: fadeInText 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Fade-In Text Animation */
+@keyframes fadeInText {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Delay for Each Span */
+.typing span:nth-child(1) {
+    animation-delay: 0.5s;
+}
+.typing span:nth-child(2) {
+    animation-delay: 2.5s;
+}
+.typing span:nth-child(3) {
+    animation-delay: 4.5s;
+}
+.typing span:nth-child(4) {
+    animation-delay: 6.5s;
+}
+
+.action-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: #1e1e1e; 
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0;
+    animation: showButton 2s ease-in-out forwards;
+    animation-delay: 8s;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.action-button:hover {
+    background: #ffffff;
+    color: #121212;
+    box-shadow: 0 0 10px #ffa36c, 0 0 20px #33ff57, 0 0 30px #3357ff;
+    transform: scale(1.1);
+}
+
+@keyframes showButton {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (min-width:521px) and (max-width:1150px) {
+
+    .text-container {
+        width: 75%;
+        padding: 0.7rem;
+    }
+        
+    /* Typing Animation */
+    .typing span {
+        font-size: 1.5rem;
+        margin: 0.6rem auto;
+    }
+            
+    .action-button {
+        margin-top: 20px;
+        padding: 12px 24px;
+        font-size: 1.3rem;
+    }
+        
+}
+
+@media (max-width:520px) {
+
+    .text-container {
+        width: 85%;
+        padding: 0.4rem;
+    }
+        
+    /* Typing Animation */
+    .typing span {
+        font-size: 0.8rem;
+        margin: 0.4rem auto;
+    }
+            
+    .action-button {
+        margin-top: 10px;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
