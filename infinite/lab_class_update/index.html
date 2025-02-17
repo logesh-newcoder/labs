@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import CSV</title>
+    <link rel="stylesheet" href="../lab_html/style_normal.css">
+    <link rel="stylesheet" href="../lab_html/style_desktop.css">
+    <link rel="stylesheet" href="../lab_html/style_phone.css">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h2>LAB FINDER</h2>
+            <a href="../index.html"><img src="../lab_html/home icon.png" alt=""></a>
+        </div>    
+    </header> 
+
+    <div class="csv">
+        <h1>Import CSV File</h1>
+    
+        <form action="csv.php" method="post" enctype="multipart/form-data">
+            <label for="table">Choose Table:</label>
+            <select name="table" id="table">
+                <option value="lab_1_class">GOSLING LAB</option>
+                <option value="lab_2_class">LINUS LAB</option>
+                <option value="lab_3_class">GATES LAB</option>
+                <option value="lab_4_class">RITCHIE LAB</option>
+                <option value="lab_5_class">JOBS LAB</option>
+            </select>
+            <br><br>
+            
+            <label for="file">Upload CSV:</label>
+            <input type="file" name="file" id="file" />
+            <br><br>
+            
+            <button type="submit" name="submit">Import</button>
+        </form>    
+    </div>
+</body>
+</html>

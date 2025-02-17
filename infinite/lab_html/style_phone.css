@@ -1,0 +1,95 @@
+@media (max-width: 520px){
+    
+    header {
+        padding: 0.6rem 0;
+    }
+    
+    header .top {
+        width: 90%;
+        margin: 0.3rem auto;
+    }
+    
+    header .top h2 {
+        font-size: 1.5rem;
+    }
+    
+    header .top a img {
+        height: 2rem;
+    }
+    
+    /*======================table style start===============*/
+    table {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+
+    table .dayper {
+        width: 15%;
+    }
+        
+    table th {
+        width: 17%;
+        padding: 5px;
+        font-size: 0.6rem;
+    }    
+
+    table td button {
+        font-size: 0.6rem;
+        font-weight: 400;
+    }
+    
+    /*======================table down displayer form style start */
+    main .displayer {
+        padding: 0.5rem;
+    }
+        
+    .displayer h1 {
+        font-size: 0.7rem;
+        padding: 0.5rem 0;
+    }    
+    #classname ,#classupdate ,textarea {
+        width: 95%;
+        margin: 5px auto;
+        padding: 7px;
+        font-size: 0.8rem;        
+    }
+        
+    textarea {
+        height: 150px;
+    }
+        
+    form #sub ,form button {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+
+    /*=============csv file css====================*/
+    .csv {
+        width: 70%;
+        font-size: 0.8rem;
+    }
+
+    .csv form {
+        margin: 0.5rem auto;
+        padding: 15px;
+    }
+
+    .csv select,
+    .csv input {
+        font-size: 0.7rem;
+    }
+
+    .csv button {
+        font-size: 0.7rem;
+    }
+
+    .csv input[type="file"] {
+        font-size: 0.7rem;
+    }
+
+    .csv select {
+        font-size: 0.7rem;
+    }
+
+}

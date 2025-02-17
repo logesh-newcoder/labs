@@ -1,0 +1,72 @@
+@media (max-width:520px) {
+    
+    header {
+        padding: 0.6rem 0;
+    }
+    
+    header .top {
+        width: 90%;
+        margin: 0.3rem auto;
+    }
+    
+    header .top h2 {
+        font-size: 1.5rem;
+    }
+            
+    nav {
+        margin: 0.8rem auto;
+        gap: 1rem;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        width: 75%;
+    }
+    
+    nav ul li {
+        margin: 0.6rem 0;
+    }
+    
+    nav ul li a {
+        padding: 0.7rem;
+        font-size: 0.7rem;
+    }
+        
+    footer {
+        padding: 0.5rem 0;
+    }
+    
+    footer .footer {
+        width: 95%;
+    }
+    
+    footer .footer .details {
+        font-size: 0.5rem;
+        font-weight:400;
+    }
+    
+    /*=============csv file css====================*/
+    .csv {
+        width: 75%;
+        font-size: 0.7rem;
+    }
+
+    .csv select,
+    .csv input {
+        font-size: 0.7rem;
+    }
+
+    .csv button {
+        padding: 10px 10px;
+        font-size: 0.7rem;
+    }
+
+    .csv input[type="file"] {
+        font-size: 0.7rem;
+    }
+
+    .csv select {
+        font-size: 0.7rem;
+        }    
+}
