@@ -1,0 +1,33 @@
+========================== CREATE COMMAND FOR LOGIN===========================
+
+CREATE TABLE `login` (`id` INT(10) NOT NULL AUTO_INCREMENT , `user_id` VARCHAR(30) NOT NULL , `user_password` VARCHAR(30) NOT NULL , PRIMARY KEY (`id`, `user_id`));
+
+CREATE TABLE `freeze` (`id` INT PRIMARY KEY, `deadline` DATE NOT NULL);
+
+========================== CREATE COMMAND FOR TIMETABLE===========================
+
+CREATE TABLE `lab_1_tt` (`class_id` INT(10) NOT NULL , `class_order` VARCHAR(20) NOT NULL , `class_1` INT(10) NOT NULL , `class_1_name` VARCHAR(100) NOT NULL , `class_2` INT(10) NOT NULL , `class_2_name` VARCHAR(100) NOT NULL , `class_3` INT(10) NOT NULL , `class_3_name` VARCHAR(100) NOT NULL , `class_4` INT(10) NOT NULL , `class_4_name` VARCHAR(100) NOT NULL , `class_5` INT(10) NOT NULL , `class_5_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`class_id`));
+
+CREATE TABLE `lab_2_tt` (`class_id` INT(10) NOT NULL , `class_order` VARCHAR(20) NOT NULL , `class_1` INT(10) NOT NULL , `class_1_name` VARCHAR(100) NOT NULL , `class_2` INT(10) NOT NULL , `class_2_name` VARCHAR(100) NOT NULL , `class_3` INT(10) NOT NULL , `class_3_name` VARCHAR(100) NOT NULL , `class_4` INT(10) NOT NULL , `class_4_name` VARCHAR(100) NOT NULL , `class_5` INT(10) NOT NULL , `class_5_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`class_id`));
+
+CREATE TABLE `lab_3_tt` (`class_id` INT(10) NOT NULL , `class_order` VARCHAR(20) NOT NULL , `class_1` INT(10) NOT NULL , `class_1_name` VARCHAR(100) NOT NULL , `class_2` INT(10) NOT NULL , `class_2_name` VARCHAR(100) NOT NULL , `class_3` INT(10) NOT NULL , `class_3_name` VARCHAR(100) NOT NULL , `class_4` INT(10) NOT NULL , `class_4_name` VARCHAR(100) NOT NULL , `class_5` INT(10) NOT NULL , `class_5_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`class_id`));
+
+CREATE TABLE `lab_4_tt` (`class_id` INT(10) NOT NULL , `class_order` VARCHAR(20) NOT NULL , `class_1` INT(10) NOT NULL , `class_1_name` VARCHAR(100) NOT NULL , `class_2` INT(10) NOT NULL , `class_2_name` VARCHAR(100) NOT NULL , `class_3` INT(10) NOT NULL , `class_3_name` VARCHAR(100) NOT NULL , `class_4` INT(10) NOT NULL , `class_4_name` VARCHAR(100) NOT NULL , `class_5` INT(10) NOT NULL , `class_5_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`class_id`));
+
+CREATE TABLE `lab_5_tt` (`class_id` INT(10) NOT NULL , `class_order` VARCHAR(20) NOT NULL , `class_1` INT(10) NOT NULL , `class_1_name` VARCHAR(100) NOT NULL , `class_2` INT(10) NOT NULL , `class_2_name` VARCHAR(100) NOT NULL , `class_3` INT(10) NOT NULL , `class_3_name` VARCHAR(100) NOT NULL , `class_4` INT(10) NOT NULL , `class_4_name` VARCHAR(100) NOT NULL , `class_5` INT(10) NOT NULL , `class_5_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`class_id`));
+
+========================== CREATE COMMAND FOR DAILY WORK===========================
+
+CREATE TABLE `lab_1_dw` (`class_id` INT PRIMARY KEY, `class_info` VARCHAR(600), `update_date` DATE );
+
+CREATE TABLE `lab_2_dw` (`class_id` INT PRIMARY KEY, `class_info` VARCHAR(600), `update_date` DATE );
+
+CREATE TABLE `lab_3_dw` (`class_id` INT PRIMARY KEY, `class_info` VARCHAR(600), `update_date` DATE );
+
+CREATE TABLE `lab_4_dw` (`class_id` INT PRIMARY KEY, `class_info` VARCHAR(600), `update_date` DATE );
+
+CREATE TABLE `lab_5_dw` (`class_id` INT PRIMARY KEY, `class_info` VARCHAR(600), `update_date` DATE );
+
+========================== CREATE COMMAND FOR SEMESTER WORK===========================
+
+CREATE TABLE `bsc.cs.i` (`dayorder` INT NOT NULL AUTO_INCREMENT , `daywork` TEXT NOT NULL , PRIMARY KEY (`dayorder`));

@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: url('../image/img.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'nav'
+        'footer';
+    grid-template-rows: auto 1fr auto;
+    overflow:  hidden auto;
+}
+
+/* ========== Navigation of lab and incharge parts css ========== */
+nav {
+    grid-area: nav;
+    margin: 2rem auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul {
+    margin: auto;
+    list-style-type: none;
+    padding: 0;
+    width: 40%;
+}
+
+nav ul li {
+    margin: 0.8rem 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    background-color: #1a1a1a; 
+    border: 2px solid  #00bcd4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
+    color: #ffffff; 
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgb(50, 50, 50); 
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); 
+}
+
+/* ========== Responsive design for mobile desktop view and tab also ========== */
+@media (min-width: 521px) and (max-width: 1250px) {     
+    nav {
+        margin: 1.5rem auto;
+        width: 90%;
+        gap: 1rem;
+    }
+    
+    nav ul {
+        width: 60%;
+    }
+
+    nav ul li {
+        margin: 1.5rem 0;
+    }
+            
+    nav ul li a {
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* ========== Responsive design for mobile view ========== */
+@media (max-width:520px) {
+    nav {
+        margin: 0.8rem auto;
+        gap: 1rem;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        width: 75%;
+    }
+    
+    nav ul li {
+        margin: 0.6rem 0;
+    }
+    
+    nav ul li a {
+        padding: 0.7rem;
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,4 @@
+CREATE DATABASE `lab_l_f`;
+CREATE DATABASE `lab_class_tt`;
+CREATE DATABASE `lab_class_dw`;
+CREATE DATABASE `lab_class_sw`;

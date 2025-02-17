@@ -1,0 +1,151 @@
+/* ========== Header part css ========== */
+header {
+    width: 100%;
+    height: max-content;
+    padding: 0.5rem 0;
+    background: linear-gradient(135deg, #001f3f, #3399ff, #001f3f);
+}
+
+header .top {
+    width: 97%;
+    height: max-content;
+    margin:auto;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .top h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #001f3f;
+}
+
+header .top a {
+    margin-right:0.5rem;
+}
+
+header .top .img {
+    display: flex;
+    gap: 0.5rem;
+}
+
+header .top a img {
+    height: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .top a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(221, 211, 211, 0.2); 
+}
+
+/* ========== Footer part css ========== */
+footer {
+    width: 100%;
+    padding: 1rem 0;
+    background: linear-gradient(135deg, #001f3f, #3399ff, #001f3f);
+}
+
+footer .footer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+footer .footer .details {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-shadow: 0 2px 8px rgba(255, 255, 255, 0.2); 
+}
+
+/* ========== Responsive design for mobile desktop view and tab also ========== */
+@media (min-width: 521px) and (max-width: 1250px) {    
+
+    /* ========== Header part css ========== */
+    header {
+        padding: 0.5rem 0;
+    }
+    
+    header .top {
+        width: 97%;
+        padding: 0.5rem;
+    }
+    
+    header .top h2 {
+        font-size: 2.5rem;
+    }
+    
+    header .top a {
+        margin-right:0.5rem;
+    }
+    
+    header .top a img {
+        height: 3rem;
+    }
+        
+    /* ========== Footer part css ========== */
+    footer {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    
+    footer .footer {
+        width: 90%;
+        font-size: 1rem;
+    }
+    
+    footer .footer .details {
+        font-size: 1rem;
+    }    
+}
+
+/* ========== Responsive design for mobile view ========== */
+@media (max-width:520px) {
+    /* ========== Header part css ========== */
+    header {
+        padding: 0.5rem 0;
+    }
+    
+    header .top {
+        width: 97%;
+        padding: 0.3rem;
+    }
+    
+    header .top h2 {
+        font-size: 1.5rem;
+    }
+    
+    header .top a {
+        margin-right:0.2rem;
+    }
+    
+    header .top a img {
+        height: 2rem;
+    }
+        
+    /* ========== Footer part css ========== */
+    footer {
+        width: 100%;
+        padding: 0.3rem 0;
+    }
+    
+    footer .footer {
+        width: 95%;
+        font-size: 0.6rem;
+    }
+    
+    footer .footer .details {
+        font-size: 0.6rem;
+    }    
+
+}

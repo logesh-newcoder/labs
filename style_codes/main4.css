@@ -1,0 +1,359 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: url('../image/img.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+    overflow: hidden auto;
+}
+
+main {
+    width: 97%;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    border: 2px solid #00bcd4;
+    color: #ffffff;
+}
+
+main .form{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    gap: 1rem;
+}
+
+.form .create, .form .import, .form .search,.form .csv{
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #f5b50e;
+}
+
+.form .create form, .form .import form, .form .search form{
+    padding: 0.5rem;
+}
+
+form h3{
+    width: max-content;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ffffff;
+    border-bottom: 2px solid #00bcd4;
+    border-radius: 10px;
+}
+
+form .lable, form .button{
+    width: 80%;
+    margin: 0.5rem auto;
+    padding: 0.5rem 0;
+}
+
+form .button{
+    text-align: center;
+}
+
+form .lable label{
+    font-size: 1.5rem;
+}
+
+.lable label input{
+    width: 70%;
+    font-size: 1rem;
+    color: #000000;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    border-radius: 10px;
+}
+
+.lable .date{
+    width: 50%;
+    background-color: #2a2a2a; 
+    color: #ffffff;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1rem; 
+}
+
+.lable .date[type="date"] {
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+
+.lable .date[type="date"]:hover {
+    background-color: #008c9e; 
+}
+
+.lable .date[type="date"]:focus {
+    background-color: #000000;
+    color: #f5b50e;
+}
+
+
+.lable .date[type="date"]::before {
+    content: attr(placeholder);
+    color: #ffffff;
+}
+
+.form .button input {
+    background-color: #00bcd4; 
+    color: #000000;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: max-content;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form .button input:hover {
+    background-color: #008c9e; 
+    transform: scale(1.05); 
+}
+
+.button h4{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.import input[type="file"] {
+    font-size: 1rem;
+    background-color: #2a2a2a; 
+    color: #e0e0e0;
+    margin: 0.5rem 0;
+}
+
+.import input[type="file"]::file-selector-button {
+    background-color: #00bcd4; 
+    color: #ffffff;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.import input[type="file"]::file-selector-button:hover {
+    background-color: #008c9e; 
+}
+
+.import select,
+.search form #table{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #444; 
+    background-color: #2a2a2a; 
+    color: #ffffff;
+}
+
+.import input:focus,
+.import select:focus,
+.search form #table:focus {
+    outline: none;
+    border-color: #00bcd4; 
+    box-shadow: 0 0 5px #00bcd4; 
+}
+
+.search table{
+    width: 85%;
+    margin: 0.5rem auto;
+    border-collapse:collapse ;
+}
+
+.search table,.search td,.search th{
+    border: 2px solid #00bcd4 ;
+}
+
+.search table th{   
+    background-color: transparent;
+    color: #f5b50e;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+.search table tr .day {
+    width: 25%;
+}
+
+.search table tr td {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* ========== Responsive design for mobile desktop view and tab also ========== */
+@media (min-width: 521px) and (max-width: 1250px) {
+    main {
+        width: 97%;
+        padding: 0.5rem;
+    }
+        
+    form h3{
+        font-size: 1.5rem;
+    }
+    
+    form .lable, form .button{
+        margin: 0.8rem auto;
+    }
+    
+    form .lable label{
+        font-size: 1.2rem;
+    }
+    
+    .lable label input{
+        width: 70%;
+        font-size: 1rem;
+    }
+    
+    .lable .date[type="date"] {
+        width: 70%;
+        font-size: 1rem;
+    }
+            
+    .form .button input {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+        
+    .button h4{
+        font-size: 1rem;
+    }
+                        
+    .search table{
+        width: 85%;
+        margin: 0.5rem auto;
+    }
+        
+    .search table th{   
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .search table tr .day {
+        width: 25%;
+    }
+    
+    .search table tr td {
+        padding: 0.4rem 0.5rem;
+        font-size: 1rem;
+    }    
+}
+/* ========== Responsive design for mobile view ========== */
+@media (max-width: 520px){
+
+    main {
+        padding: 0.3rem;
+    }
+    
+    main .form{
+        gap: 1rem;
+    }
+    
+    .form .create, .form .import, .form .search{
+        padding: 0.3rem;
+    }
+    
+    .form .create form, .form .import form, .form .search form{
+        padding: 0.3rem;
+    }
+    
+    form h3{
+        padding: 0.3rem;
+        margin: 0.3rem auto;
+        font-size: 0.8rem;
+    }
+    
+    form .lable, form .button{
+        width: 80%;
+        margin: 0.3rem auto;
+        padding: 0.3rem 0;
+    }
+    
+    form .lable label{
+        font-size: 0.7rem;
+    }
+    
+    .lable label input{
+        width: 70%;
+        font-size: 0.6rem;
+        padding: 0.3rem;
+        margin: 0.3rem auto;
+    }
+
+    .lable .date[type="date"] {
+        width: 50%;
+        padding: 0.3rem;
+        font-size: 0.8rem;
+    }
+    
+    
+    .form .button input {
+        margin: 0.3rem;
+        padding: 0.3rem;
+        font-size: 0.6rem;
+        font-weight: 400;
+    }
+        
+    .button h4{
+        font-size: 0.7rem;
+        padding: 0.3rem 0;
+    }
+    
+    .import input[type="file"] {
+        font-size: 0.6rem;
+        margin: 0.3rem 0;
+    }
+    
+    .import input[type="file"]::file-selector-button {
+        padding: 0.3rem;
+    }
+        
+    .import select,
+    .search form #table{
+        font-size: 0.6rem;
+        padding: 0.3rem;
+        margin-bottom: 0.3rem;
+        margin-left: 0.3rem;
+    }
+    
+    .search table{
+        width: 95%;
+        margin: 0.3rem auto;
+    }
+        
+    .search table th{   
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+
+    .search table tr .day {
+        width: 25%;
+    }
+    
+    .search table tr td {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.6rem;
+    }
+}
