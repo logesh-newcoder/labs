@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import CSV</title>
+    <link rel="stylesheet" href="../stylesheet/style3.css">
+    <link rel="stylesheet" href="../stylesheet/styles4.css">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h2>LAB FINDER</h2>
+            <div class="img">
+                <a href="index.php"><img src="../imgsheet/home icon.png" alt="home"></a>
+                <a href="../index.html"><img src="../imgsheet/logout.png" alt="logout"></a>
+            </div>
+        </div>    
+    </header> 
+
+    <div class="csvform">
+        <div class="csv" style="margin: 1rem auto;">
+            <h1>Import CSV File</h1>
+            <!--========== Import CSV file in the database wiht their field ==========-->
+            <form action="../phpcodesheet/class_csv/classtable.php" method="post" enctype="multipart/form-data">
+                <label for="table">Choose Table:</label>
+                <select name="table" id="table">
+                    <option value="" disabled selected>Please select the lab</option>
+                    <option value="lab_1_class">GOSLING LAB</option>
+                    <option value="lab_2_class">LINUS LAB</option>
+                    <option value="lab_3_class">GATES LAB</option>
+                    <option value="lab_4_class">RITCHIE LAB</option>
+                    <option value="lab_5_class">JOBS LAB</option>
+                </select>
+                <br><br>
+                
+                <label for="file">Upload CSV:</label>
+                <input type="file" name="file" id="file" />
+                <br><br>
+                
+                <button type="submit" name="submit">Import DATA</button>
+                <button type="submit" name="truncate">REMOVE DATA</button>
+            </form>    
+        </div>
+        <div class="csv" style="margin: 1rem auto;">
+            <form action="../phpcodesheet/task/labs.php" method="post">
+                <label for="table">Choose Table:</label>
+                <select name="table" id="table">
+                    <option value="" disabled selected>Please select the lab</option>
+                    <option value="lab_1">GOSLING LAB</option>
+                    <option value="lab_2">LINUS LAB</option>
+                    <option value="lab_3">GATES LAB</option>
+                    <option value="lab_4">RITCHIE LAB</option>
+                    <option value="lab_5">JOBS LAB</option>
+                </select>
+                <br><br>
+               <button type="submit" name="truncate">REMOVE TASK DATA</button>            
+            </form>
+        </div>    
+    </div>
+</body>
+</html>

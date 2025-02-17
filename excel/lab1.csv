@@ -1,0 +1,7 @@
+class_id,class_oredr,class_id,class_oredr,class_id,class_oredr,class_id,class_oredr,class_id,class_oredr,class_id,class_oredr
+101,I,3,II BSC IT -LINUX,2,III BCA -P.L,,,,,,
+102,II,3,III BCA -P.L,2,I BCOM CA -SQL,,,,,,
+103,III,3,III BSC CS A -P.L,1,II BSC MAT -C,1,FREE,,,,
+104,IV,3,III BSC CS B -P.L,2,III BSC CS A -P.L,,,,,,
+105,V,3,III BSC IT -P.L,2,III BSC CS B -P.L,,,,,,
+106,VI,3,I BCOM CA -SQL,2,III BSC IT -P.L,,,,,,

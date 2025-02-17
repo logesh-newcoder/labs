@@ -1,0 +1,6 @@
+========================== CREATE COMMAND ===========================
+CREATE TABLE `bsc.cs.i` (dayorder INT NOT NULL AUTO_INCREMENT , daywork TEXT NOT NULL , PRIMARY KEY (`dayorder`));
+
+========================== INSERT COMMAND ===========================
+
+INSERT INTO `bsc.cs.iii`(`dayorder`, `daywork`) VALUES ('1','Rotate an image'),('2','Dropping a word'),('3','DDA line drawing algorithim'),('4','Moving car with sound effect'),('5','Bounce a ball'),('6','Pixel is inside or outside of the polygon'),('7','Sunflower creation'),('8','Plane flying');

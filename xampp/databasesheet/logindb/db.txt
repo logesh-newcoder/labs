@@ -1,0 +1,7 @@
+========================== CREATE COMMAND ===========================
+
+CREATE TABLE lablogin (id INT(10) NOT NULL AUTO_INCREMENT , user_id VARCHAR(30) NOT NULL , user_password VARCHAR(30) NOT NULL , PRIMARY KEY (id, user_id));
+
+========================== INSERT COMMAND ===========================
+
+INSERT INTO lablogin (user_id, user_password) VALUES ('kasc@101','stu'),('kasc@102','staffs'),('kasc@103','labhead');

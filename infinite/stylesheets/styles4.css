@@ -1,0 +1,197 @@
+/*========== CSV File Dark Theme CSS ==========*/
+.csvform {
+    width: 60%;
+    height: max-content;
+    margin: auto;
+}
+
+.csv {
+    width: 100%;
+    height: max-content;
+    padding: 0.5rem;
+    background-color: #1a1a1a; 
+    border: 4px solid #f5b50e; 
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; 
+}
+
+.csv h1 {
+    text-align: center;
+    margin: 0.5rem;
+    color: #ffffff;
+}
+
+.csv form {
+    width: 90%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #2b2b2b; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
+}
+
+.csv label {
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #ffffff; 
+}
+
+.csv select,
+.csv input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #444; 
+    background-color: #2a2a2a; 
+    color: #e0e0e0; 
+}
+
+.csv input:focus,
+.csv select:focus {
+    outline: none;
+    border-color: #00bcd4; 
+    box-shadow: 0 0 5px #00bcd4; 
+}
+
+.csv button {
+    background-color: #00bcd4; 
+    color: #000;
+    font-weight: 500;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: max-content;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.csv button:hover {
+    background-color: #008c9e; 
+    transform: scale(1.05);
+}
+
+.csv input[type="file"] {
+    font-size: 1.3rem;
+    background-color: #2a2a2a; 
+    color: #e0e0e0;
+}
+
+.csv select {
+    font-size: 1.3rem;
+}
+
+.csv input[type="file"]::file-selector-button {
+    background-color: #00bcd4; 
+    color: #ffffff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.csv input[type="file"]::file-selector-button:hover {
+    background-color: #008c9e; 
+}
+
+/* ========== Responsive design for mobile desktop view and tab also ========== */
+@media (min-width: 521px) and (max-width: 1250px) {
+    .csvform {
+        width: 70%;
+    }    
+    .csv {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .csv h1 {
+        margin: 0.8rem;
+    }
+    
+    .csv form {
+        width: 90%;
+        margin: 0.5rem auto;
+        padding: 0.8rem;
+    }
+    
+    .csv label {
+        margin-bottom: 0.5rem;
+    }
+    
+    .csv select,
+    .csv input {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .csv button {
+        font-weight: 500;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+        
+    .csv input[type="file"] {
+        font-size: 1.5rem;
+    }
+    
+    .csv select {
+        font-size: 1.5rem;
+    }
+}    
+
+/* ========== Responsive design for mobile view ========== */
+@media (max-width: 520px){
+    .csvform {
+        width: 85%;
+    }    
+    .csv {
+        width: 100%;
+        padding: 0.3rem;
+        font-size: 1rem;
+    }
+    
+    .csv h1 {
+        margin: 0.5rem;
+    }
+    
+    .csv form {
+        width: 90%;
+        margin: 0.3rem auto;
+        padding: 0.5rem;
+    }
+    
+    .csv label {
+        margin-bottom: 0.5rem;
+    }
+    
+    .csv select,
+    .csv input {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .csv button {
+        font-weight: 500;
+        margin: 0.3rem;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+        
+    .csv input[type="file"] {
+        font-size: 0.8rem;
+    }
+    
+    .csv select {
+        font-size: 0.8rem;
+    }
+}
