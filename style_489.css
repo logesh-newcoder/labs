@@ -1,0 +1,18 @@
+@media (max-width:480px) {
+    
+    .top{
+    padding: 10px;
+    font-size: 5vw;
+    }
+
+    a{
+        font-size: 4.5vw;
+    }
+    
+    li{
+        width: 70vw;
+        padding: 10px;
+        margin: 20px;
+    }
+
+}
